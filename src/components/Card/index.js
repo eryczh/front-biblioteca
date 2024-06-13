@@ -2,7 +2,7 @@ import './index.scss';
 import { API_ADDRESS } from '../../api/constant';
 
 export default function Card({ item }) {
-    // Verifique se item e item.foto existem antes de tentar usar replace
+    
     const imgSrc = item && item.foto ? `${API_ADDRESS}/${item.foto.replace(/\\/g, "/")}` : "assets/images/hp1.jpg";
 
     console.log("Image URL:", imgSrc);

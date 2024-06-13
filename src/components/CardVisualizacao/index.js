@@ -14,7 +14,7 @@ export default function CardVisualizacao({ item }) {
                 <div className='box1'>
                 <img src={imgSrc} alt='capa livro' onError={(e) => {
                     console.error("Erro ao carregar a imagem:", imgSrc);
-                    e.target.src = "assets/images/hp1.jpg"; // Caminho para uma imagem de fallback
+                    e.target.src = "assets/images/hp1.jpg"; 
                 }} />
 
                 </div>

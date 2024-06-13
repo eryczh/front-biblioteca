@@ -28,7 +28,7 @@ export default function CriarLivro() {
         formData.append("descricao", descricao);
         formData.append("genero", genero);
         if (capa) {
-            formData.append("foto", capa); // Adiciona o arquivo da capa ao FormData
+            formData.append("foto", capa);
         }
 
         try {
@@ -45,8 +45,8 @@ export default function CriarLivro() {
         const file = e.target.files[0];
         console.log("Arquivo selecionado:", file);
         if (file) {
-            setCapa(file); // Armazena o arquivo de imagem
-            setCapaPreview(URL.createObjectURL(file)); // Armazena o caminho de pré-visualização
+            setCapa(file); 
+            setCapaPreview(URL.createObjectURL(file)); 
         }
     }
     
