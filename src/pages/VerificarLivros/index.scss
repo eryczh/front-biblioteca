@@ -1,0 +1,11 @@
+.secaoVerificaLivros {
+    height: 100%;
+}
+
+.secaoVerificaLivros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px 280px;
+    gap: 70px
+}

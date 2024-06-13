@@ -1,0 +1,44 @@
+.card-ver {
+    display: inline-block;
+    width: 200px; /* Tamanho fixo para todos os cards */
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #979797;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        h1, span {
+            color: #000;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .content {
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    p {
+        font-size: 14px; /* Tamanho da fonte ajustado */
+        margin: 5px 0;
+        color: #999;
+        text-decoration: none;
+    }
+
+    .editar {
+        text-decoration: none;
+    }
+}

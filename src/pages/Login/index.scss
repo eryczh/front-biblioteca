@@ -1,0 +1,73 @@
+.content-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    .fundo-inicial {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://source.unsplash.com/random') no-repeat center center/cover;
+        filter: blur(8px);
+        z-index: -1;
+    }
+    .login-page {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+        width: 100%;
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1 {
+                font-size: 2em;
+                margin-bottom: 20px;
+                color: #333;
+            }
+            input {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+            button {
+                width: 100%;
+                padding: 10px;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                margin-top: 10px;
+                &:hover {
+                    background-color: #0056b3;
+                }
+            }
+            .create-login {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                a {
+                    color: #007bff;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

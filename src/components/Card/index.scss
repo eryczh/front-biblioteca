@@ -1,0 +1,116 @@
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: "Noto Sans", sans-serif;
+    color: #979797;
+    max-width: 200px; // Definindo um tamanho máximo para o card
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      
+      h1, span {
+        color: #000;
+      }
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+  
+    .content {
+      padding: 10px; // Diminuído o padding
+      background-color: #f9f9f9;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+  
+      h1 {
+        font-size: 1rem; // Diminuído o tamanho da fonte
+        margin: 5px 0;
+        color: #333;
+      }
+  
+      h2 {
+        font-size: 0.8rem; // Diminuído o tamanho da fonte
+        margin: 5px 0;
+        color: #555;
+      }
+  
+      h3 {
+        font-size: 0.7rem; // Diminuído o tamanho da fonte
+        margin: 5px 0;
+        color: #777;
+      }
+  
+      p {
+        font-size: 0.6rem; // Diminuído o tamanho da fonte
+        margin: 5px 0;
+        color: #999;
+      }
+    }
+  }
+  
+  // Responsividade
+  @media (max-width: 1330px) {
+    .card {
+      max-width: 180px; // Diminuído o tamanho do card para telas menores
+      img {
+        height: auto;
+      }
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .card {
+      max-width: 160px; // Diminuído o tamanho do card para telas menores
+      img {
+        height: auto;
+      }
+  
+      .content {
+        h1 {
+          font-size: 0.9rem; // Ajustado o tamanho da fonte
+        }
+        h2 {
+          font-size: 0.7rem; // Ajustado o tamanho da fonte
+        }
+        h3 {
+          font-size: 0.6rem; // Ajustado o tamanho da fonte
+        }
+        p {
+          font-size: 0.5rem; // Ajustado o tamanho da fonte
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      max-width: 140px; // Diminuído o tamanho do card para telas menores
+      img {
+        height: auto;
+      }
+  
+      .content {
+        h1 {
+          font-size: 0.8rem; // Ajustado o tamanho da fonte
+        }
+        h2 {
+          font-size: 0.6rem; // Ajustado o tamanho da fonte
+        }
+        h3 {
+          font-size: 0.5rem; // Ajustado o tamanho da fonte
+        }
+        p {
+          font-size: 0.4rem; // Ajustado o tamanho da fonte
+        }
+      }
+    }
+  }
+  
