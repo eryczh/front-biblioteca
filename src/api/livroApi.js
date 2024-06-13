@@ -39,7 +39,7 @@ export async function removerLivro(id, navigate) {
 }
 
 export async function buscarLivros() {
-    const url = `${API_ADDRESS}/livros`;
+    const url = API_ADDRESS + '/livros';
 
     try {
         let r = await axios.get(url);

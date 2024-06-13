@@ -19,7 +19,8 @@ export default function Login () {
     
     return (
         <div className='content-login'>
-            <div className='fundo-inicial'></div>
+            <div className='fundo-inicial'>
+            </div>
             <div className='login-page'>
                 <div className='login-form'>
                     <h1>Login</h1>

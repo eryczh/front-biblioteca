@@ -5,7 +5,7 @@ import './index.scss';
 
 export default function CardVerificacao({ item }) {
     
-    const imgSrc =  `${API_ADDRESS}/${item.foto}`;
+    const imgSrc = `${API_ADDRESS}/${item.foto}`;
     console.log("Image URL:", imgSrc); 
 
     return (

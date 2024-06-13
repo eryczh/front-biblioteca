@@ -2,7 +2,7 @@ import './index.scss';
 import { API_ADDRESS } from '../../api/constant';
 
 export default function Card ({ item }) {
-    // const imgSrc = item.foto ? `${API_ADDRESS}/storage/capa/${item.foto.replace(/\\/g, "/")}` : "assets/images/hp1.jpg";
+    //const imgSrc = item.foto ? `${API_ADDRESS}/storage/capa/${item.foto.replace(/\\/g, "/")}` : "assets/images/hp1.jpg";
 
     const imgSrc = `${API_ADDRESS}/${item.foto}`;
 
@@ -17,7 +17,6 @@ export default function Card ({ item }) {
                     <span>{item.genero ?? 'genero'}</span>
                 </div>
             </div>
-
         </div>
     )
 }

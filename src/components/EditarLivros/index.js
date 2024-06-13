@@ -5,7 +5,7 @@ import axios from 'axios';
 import { API_ADDRESS } from '../../api/constant';
 
 import * as livroApi from '../../api/livroApi';
-import Header from '../Header';
+
 import Footer from '../Footer';
 import Header2 from '../Header2';
 
@@ -69,7 +69,6 @@ export default function EditarLivro() {
             });
             alert('Imagem alterada com sucesso');
     
-            // Criar o URL do novo arquivo e atualizar o estado imgSrc
             const newImgSrc = URL.createObjectURL(file);
             setImgSrc(newImgSrc);
         } catch (error) {
