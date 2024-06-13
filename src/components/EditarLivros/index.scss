@@ -62,9 +62,10 @@
         }
 
         label {
+            
             background-color: #333;
             color: white;
-            padding: 20px 50px;
+            padding: 20px 150px;
             border-radius: 4px;
             cursor: pointer;
 
@@ -75,11 +76,11 @@
 
         .aceites-edit {
             display: flex;
+            flex-direction: row; /* Alinha os botões em linha */
             gap: 1rem;
             margin-top: 1rem;
 
             .botoes {
-             
                 background-color: #333;
                 color: white;
                 padding: 0.75rem 1.5rem;
@@ -91,8 +92,6 @@
                 &:hover {
                     background-color: #666;
                 }
-
-                
             }
         }
     }
